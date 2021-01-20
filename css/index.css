@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#DivEliminar{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    font-size: 20px;
+}
+
+#DivModificar{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    font-size: 20px;
+}
+
+#DivAgregar{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    font-size: 20px;
+}
+
+#DivObtener{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5%;
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    color: white;
+    font-size: 20px;
+}
+
+.FORMS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FORHIDE{
+    display: none;
+}
+
+.MENU{
+    border: 1px solid black;
+    background-color: rgb(48, 48, 48);
+}
+
+.lista{
+    display: flex;
+    list-style: none;
+}
+    li{
+        margin-left: 12%;
+    }
+    
+    li a {
+        background-color:#000;
+        color:#fff;
+        padding:10px 12px;
+        display:block;
+    }
+    
+    li a:hover {
+        background-color:#434343;
+        cursor: pointer;
+    }
+    
+.userinfo{
+    background-color: brown;
+    padding: 1px;
+}
+
+.userinfo{
+    text-align: right;
+}
+    #btnsalir{
+        background-color: brown;
+        border-color: brown;
+        color: white;
+        size: 20px;
+    }
+
+.MangaDiv{
+    width: 40%;
+    display: inline-block;
+    background-color: rgb(23, 78, 26);
+    border-color: black;
+    font-size: 15px;
+    margin: 2%;
+    text-align: justify;
+    color: white;
+    padding: 1%;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+#ShowAllMangas{
+    background-color: rgb(138, 138, 138);
+    font-size: 24px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+    #ShowAllMangas:hover{
+        background-color: rgb(180, 180, 180);
+    }
+
+.ApiExterna{
+    background-color: rgb(138, 138, 138);
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5%;
+    margin-left: 35%;
+}
+
+#InfoCiudad{
+    border: 1px solid black;
+    border-radius: 0px 0px 20px 20px;
+    background-color: burlywood;
+    color: white;
+    font-size: 20px;
+}

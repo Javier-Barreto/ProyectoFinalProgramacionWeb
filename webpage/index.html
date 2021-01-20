@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Venta Mangas</title>
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+    </head>
+    <body onload="onloadpage()">
+        <header>
+            <div class="userinfo">
+                <p id="nombreusuario"></p>
+                <button href="login.html" id="btnsalir">Salir</button>
+            </div>
+            <div class="MENU">
+                <ul class="lista">
+                    <li id="SHOWADDMANGA">
+                        <a>Agregar Manga</a>
+                    </li>
+                    <li id="SHOWFINDMANGA">
+                        <a>Obtener Mangas</a>
+                    </li>
+                    <li id="SHOWDELETEMANGA">
+                        <a>Borrar Manga</a>
+                    </li>
+                    <li id="SHOWMODMANGA">
+                        <a>Modificar Manga</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="FORMS">
+            <div id="DivAgregar">
+                <h2>Ingrese el nombre del Manga a Agregar</h2>
+                <form method="POST" action="http://localhost:1330/venta_mangas/mangas">
+
+                    <label for="NombreManga">
+                        Nombre del manga:
+                        <input type="text" value="" name="NombreManga" id="NombreMangaAdd">
+                    </label>
+                    <br>
+
+                    <label for="Autor">
+                        Autor:
+                        <input type="text" value="" name="AutorAdd" id="AutorAdd">
+                    </label>
+                    <br>
+
+                    <label for="Editorial">
+                        Editorial:
+                        <input type="text" value="" name="EditorialAdd" id="EditorialAdd">
+                    </label>
+                    <br>
+
+                    <label for="NumeroPaginas">
+                        Numero de paginas:
+                        <input type="number" value="" name="NumeroPaginasAdd" id="NumeroPaginasAdd">
+                    </label>
+                    <br>
+
+                    <label for="Precio">
+                        Precio:
+                        <input type="number" value="" name="PrecioAdd" id="PrecioAdd">
+                    </label>
+                    <br>
+
+                    <label for="Resumen">
+                        Resumen:
+                        <input type="text" value="" name="ResumenAdd" id="ResumenAdd">
+                    </label>
+                    <br>
+
+                    <label for="GeneroManga">
+                        Genero:
+                        <input type="" value="" name="GeneroMangaAdd" id="GeneroMangaAdd">
+                    </label>
+                    <br>
+
+                    <label for="Fecha">
+                        Fecha de lanzamiento:
+                        <input type="date" value="" name="FechaAdd" id="FechaAdd">
+                    </label>
+                    <br>
+
+                    <button type="button" id="BtnGuardarManga">Agregar Manga</button>
+                    <button type="reset">Vaciar Campos</button>
+                </form>
+            </div>
+            
+            
+    
+    
+    
+            <div id="DivObtener" class="FORHIDE">
+                <h2>Obtener Manga</h2>
+                <h3>
+                    Mostrar todos los mangas:
+                </h3>
+                <button type="button" id="ShowAllMangas">Mostrar todos los mangas</button>
+                
+
+                <h3>Buscar un manga por genero: </h3>
+                <form>
+                    <label for="">
+                        Genero:
+                        <input type="text" value="" id="MangaGenero">
+                    </label>
+                    <button type="button" id="BtnBuscarGeneroEsp">Buscar</button>
+                </form>
+                <div id="ListOfMangas">
+
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+            <div id="DivModificar" class="FORHIDE">
+                <h2>Ingrese el nombre del Manga a Modificar</h2>
+                <form>
+                    <label>
+                        Seleccione el manga:
+                        <select id="MangaDroplist">
+                            <option value="NONE">-----------------</option>
+                        </select>
+                    </label>
+                </form>
+                <br>
+                <br>
+
+                <div id="MangaDroplistDiv" class="FORHIDE">
+                    <form>
+                        <label>Id del manga:</label>
+                        <input type="text" id="id_mangaM" disabled>
+                        <br>
+                        
+                        <label for="NombreMangaMod">
+                            Nombre del manga:
+                            <input type="text" value="" name="NombreMangaMod" id="NombreMangaMod">
+                        </label>
+                        <br>
+    
+                        <label for="AutorMod">
+                            Autor:
+                            <input type="text" value="" name="AutorMod" id="AutorMod">
+                        </label>
+                        <br>
+    
+                        <label for="EditorialMod">
+                            Editorial:
+                            <input type="text" value="" name="EditorialMod" id="EditorialMod">
+                        </label>
+                        <br>
+    
+                        <label for="NumeroPaginasMod">
+                            Numero de paginas:
+                            <input type="number" value="" name="NumeroPaginasMod" id="NumeroPaginasMod">
+                        </label>
+                        <br>
+    
+                        <label for="PrecioMod">
+                            Precio:
+                            <input type="number" value="" name="PrecioMod" id="PrecioMod">
+                        </label>
+                        <br>
+    
+                        <label for="ResumenMod">
+                            Resumen:
+                            <input type="text" value="" name="ResumenMod" id="ResumenMod">
+                        </label>
+                        <br>
+    
+                        <label for="GeneroMangaMod">
+                            Genero:
+                            <input type="" value="" name="GeneroMangaMod" id="GeneroMangaMod">
+                        </label>
+                        <br>
+    
+                        <label for="FechaMod">
+                            Fecha de lanzamiento:
+                            <input type="date" value="" name="FechaMod" id="FechaMod">
+                        </label>
+                        <br>
+    
+                        <button type="button" id="BtnModificarManga">Modificar información</button>
+                        <button type="reset">Vaciar Campos</button>
+                    </form>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+            <div id="DivEliminar" class="FORHIDE">
+                <h2>Ingrese el nombre del Manga a Borrar</h2>
+                <form>
+                    <label>
+                        Ingrese el nombre del manga:
+                        <input type="text" value="" name="BorrarManga" id="BorrarManga">
+                        <br>
+                        <button id="BtnBorrarManga">Borrar</button>
+                    </label>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="ApiExterna">
+            <form>
+                <h2>Obtener clima de una ciudad</h2>
+                <label>
+                    Ciudad:
+                    <input type="text" id="NCiudad">
+                </label>
+                <br>
+                <button type="button" id="apiexternabtn">Obtener clima</button>
+            </form>
+
+            <div id="InfoCiudad" class="FORHIDE">
+
+            </div>
+        </div>
+        <script src="../JS/useronpage.js"></script>
+        <script src="../JS/formdivs.js"></script>
+        <script src="../JS/app2.js"></script>
+    </body>
+</html>

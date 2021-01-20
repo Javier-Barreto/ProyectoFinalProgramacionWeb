@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+    </head>
+    <body>
+        <div class="forcenter">
+            <div id="logindiv">
+                <form method="post" action="http://localhost:1330/login">
+                    <label for="login">
+                        Usuario:
+                        <input type="text" value="" name ="login" id="login" placeholder="example">
+                    </label>
+        
+                    <br>
+                    <label for="password">
+                        Contraseña:
+                        <input type="password" value="" name="password" id="password">
+                    </label>
+                    <br>
+                    <button type="submit" class="BtnLogin" id="BtnLogin">Iniciar Sesion</button>
+                    <button type="reset" class="BtnReset">Reiniciar campos</button>
+                </form>
+            </div>
+        </div>
+        <script src="../JS/useronpage.js"></script>
+        <script src="../JS/app.js"></script>
+    </body>
+</html>

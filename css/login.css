@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(48, 48, 48);
+}
+
+#logindiv{
+    background-color: rgb(148, 148, 148);
+    color: white;
+    border: 1px solid black;
+    width: 30%;
+    font-size: 30px;
+    text-align: center;    
+}
+
+    .forcenter{
+        height: 600px;
+        /*IMPORTANTE*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+label{
+    margin:2%;
+}
+
+.BtnLogin{
+    background-color: rgb(22, 170, 22);
+    color: white;
+    border: black;
+}
+
+.BtnReset{
+    background-color: rgb(167, 47, 47);
+    color: white;
+    border: black;
+}
